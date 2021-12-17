@@ -1,6 +1,6 @@
 :root {
   --bs-dark-rgb: 245, 198, 188;
-    
+  --bs-body-line-height: .18;
 }
 .btn-outline-dark:hover {
     color: #fff;
@@ -13,46 +13,9 @@
   border-radius: 50%;
 }
 
-.mySlides {
-  display: flex;
-  justify-content: center;
+hr{
+  color: #F1A68E;
 }
-
-.carousel-books {
-  position: relative;
-  background-color: #fceae9;
-  padding: 1em;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 75%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ed8178;
-}
-
 Body {
   background-color: #f1a68e;
   font-family: 'Cormorant', serif;
@@ -62,4 +25,203 @@ Body {
 .card {
   background-color: #fcede8;
   border-radius: 5px;
+}
+
+.carousel-books {
+  background-color: #fceae9;
+  padding: 1em;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  width: auto;
+  padding: 16px;
+  color: #222;
+  background-color: rgb(245, 198, 188);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+.prev {
+  left: -5%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -5%;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ed8178;
+}
+
+.mySlides {
+  display: none;
+
+}
+.imgZero, .imgOne, .imgTwo {
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.textNext {
+    padding: 2px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+@media screen and (max-width: 768px) {
+  .textNext{grid-template-columns: 1fr;}
+}
+
+
+/* Fading animation */
+.fadeOne {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.textNext {font-size: 11px}
+}
+
+.small {
+  font-size: .6em;
+}
+
+.btn {
+  color: black;
+  border-color: #F5C6BC;
+
+}
+.btn-primary {
+  background-color: #bb7795;
+  border-color: #F5C6BC;
+}
+
+.btn-primary:hover {
+  background-color: #F5C6BC;
+  color: black;
+}
+
+.text-white-50 {
+    --bs-text-opacity: 1;
+    color: #FFFFFF !important;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.display-4 {
+    font-size: 3.0rem;
+}
+
+h3 {
+  font-size: 23px;
+
+  color: white;
+}
+
+
+
+.form-floating > .form-control, .form-floating > .form-select {
+    height: calc(1.5rem + 0px);
+    width: 50%;
+}
+
+
+.collectEmail {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+    display: inline;
+    width: 50%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.center_email {
+  display: flex;
+  justify-content: center;
+}
+.form-label {
+  font-weight: 600;
+}
+
+.dropdown-item {
+  padding: 0.50rem 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #fcece9;
+  opacity: 1;
+}
+
+h5 {
+  padding: 0.5rem;
+}
+
+.centerHeading {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.center_Box {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+.Center_Again {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
 }

@@ -52,8 +52,8 @@
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Shop for books</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Lover of books old and new!</p>
+                    <h1 class="display-4 fw-bolder">We respect readers, just like you.</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Shop for books now!</p>
                 </div>
             </div>
         </header>
@@ -63,41 +63,60 @@
         </nav>
 
         <hr>
-        <section>
-          <div class="carousel-books">
-            <div class="mySlides">
-              <p>icons in here</p>
+        <div class="carousel-books">
+            <div class="slideshow-container">
+
+              <div class="mySlides fadeOne">
+                <div class="textNext">
+                  <img class="imgZero" src="img/bkst.png">
+                  <h2>About us: <br> <span class="small">We are the only independent bookstore located in Potsdam, NY! Our mission is to be the world's best destination for readers, a place that fosters a culture of reading and connects people with the books they'll love. </span>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-primary " type="button">More &#10140;</button>
+                    </div>
+                  </h2>
+
+                </div>
+              </div>
+
+              <div class="mySlides fadeOne">
+                <div class="textNext">
+                  <img class="imgOne" src="img/SliderBLM.png" >
+                  <h2>Browse our BLM category! <br> <span class="small">Books to learn more about the Black Lives Matter movement and racial injustice.</span>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-primary " type="button">More &#10140;</button>
+                    </div>
+                  </h2>
+
+                </div>
+              </div>
+              <div class="mySlides fadeOne">
+                <div class="textNext">
+                  <img class="imgTwo" src="img/LibroFM.jpg" >
+                  <h2>We have books available on digital! <br><span class="small">Browse the catalog of over 185,000 audiobooks, including New York Times best sellers, and discover hidden gems curated by our expert booksellers.</span>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-primary " type="button">More &#10140;</button>
+                    </div>
+                  </h2>
+
+                </div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          </div>
-        </section>
+            <br>
+      </div>
+
         <hr>
         <!-- Section-->
         <section class="py-5">
+          <div class="centerHeading">
+            <h2>ON SALE</h2>
+          </div>
+
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/GrapesWrath.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                  First Edition:
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">The Grapes of Wrath </h5>
-                                    <!-- Product price-->
-                                    John Steinbeck
-                                    $16,000.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Make a Bid</a></div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
@@ -118,7 +137,7 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    <span class="text-muted text-decoration-line-through">$24.99</span>
                                     $18.00
                                 </div>
                             </div>
@@ -152,74 +171,6 @@
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/GreatGatsby.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">The Great Gatsby</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    $40.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/diary.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Diary of an Oxygen Thief</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/whisp.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Under The Whsipering Door</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
@@ -238,8 +189,91 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$32.99</span>
+                                    $28.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/diary.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Diary of an Oxygen Thief</h5>
+                                    <!-- Product price-->
                                     <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
+                                    $14.50
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="centerHeading">
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary " type="button">More &#10140;</button>
+                </div>
+              </div>
+              <hr>
+
+              <div class="centerHeading">
+                <h2>OUR SPECIAL EDITIONS</h2>
+              </div>
+              <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/whisp.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Under The Whsipering Door</h5>
+                                    <!-- Product price-->
+                                    $2,650.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/GreatGatsby.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">The Great Gatsby</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $20,000.00
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -266,7 +300,7 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    $40.00
+                                    $5,000.00
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -275,9 +309,65 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/GrapesWrath.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                  First Edition:
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">The Grapes of Wrath </h5>
+                                    <!-- Product price-->
+                                    <div class="centered">
+                                      John Steinbeck
+                                      $16,000.00
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Make a Bid</a></div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+                <div class="centerHeading">
+                  <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary " type="button">More &#10140;</button>
+                  </div>
+                </div>
         </section>
+        <div class="collectEmail">
+          <h3>Before you leave... Enter your email for exclusive offers! </h3>
+        </div>
+        <div class="center_email">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address: </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+        </div>
+        <div class="collectEmail">
+          <h3>Have any requests? Submit here! </h3>
+        </div>
+        <div class="center_Box">
+          <div class="mb-3">
+            <textarea class="form-control2" id="exampleFormControlTextarea1" rows="1"></textarea>
+            <div class="Center_Again">
+              <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary " type="button">Send</button>
+              </div>
+            </div>
+        
+          </div>
+
+        </div>
+
+
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Jennifer Reyes 2021</p></div>
